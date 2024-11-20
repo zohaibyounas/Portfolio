@@ -17,7 +17,7 @@ const About = () => {
           {/** Image Section */}
           <div className="flex justify-center items-center">
             <img
-              src="src/assets/Work time.gif"
+              src="src\assets\Work time.gif"
               alt="Working Illustration"
               className="rounded-2xl w-[100%] md:w-[100%] object-cover shadow-lg"
             />
