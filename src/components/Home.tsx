@@ -2,6 +2,13 @@ import Pic from "../assets/pic.jpeg";
 import { HiArrowCircleRight } from "react-icons/hi";
 
 const Home = () => {
+  const scrollToWork = () => {
+    const workSection = document.getElementById("work");
+    if (workSection) {
+      workSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="w-full pt-32 sm:pt-52 bg-gray-100">
       {/** Container */}
@@ -30,7 +37,10 @@ const Home = () => {
               engage and delight users across various platforms and devices.
             </p>
             <div>
-              <button className="text-white bg-pink-600 border-2 border-pink-600 px-6 py-3 my-4 flex items-center rounded-md hover:bg-pink-700 hover:border-pink-700 transition-all duration-300">
+              <button
+                onClick={scrollToWork}
+                className="text-white bg-pink-600 border-2 border-pink-600 px-6 py-3 my-4 flex items-center rounded-md hover:bg-pink-700 hover:border-pink-700 transition-all duration-300"
+              >
                 View Work
                 <span className="ml-3 group-hover:rotate-90 duration-300">
                   <HiArrowCircleRight />
