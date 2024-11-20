@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full min-h-screen sm:mt-28  bg-gray-200 flex justify-center items-center py-10"
+      className="w-full min-h-screen sm:mt-72  bg-gray-200 flex justify-center items-center py-10"
     >
       <div
         data-aos="zoom-in"

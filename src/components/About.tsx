@@ -14,17 +14,8 @@ const About = () => {
 
         {/** Content Section */}
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-32 px-6">
-          {/** Image Section */}
-          <div className="flex justify-center items-center">
-            <img
-              src="src\assets\Work time.gif"
-              alt="Working Illustration"
-              className="rounded-2xl w-[100%] md:w-[100%] object-cover shadow-lg"
-            />
-          </div>
-
           {/** Text Section */}
-          <div className="text-lg leading-relaxed">
+          <div className="order-2 sm:order-1 text-center sm:text-left text-lg leading-relaxed">
             <p className="text-gray-700">
               I am a passionate and skilled Frontend Developer with expertise in
               creating dynamic, responsive, and user-friendly web designs. My
@@ -39,6 +30,15 @@ const About = () => {
               If you're looking for a dedicated developer to bring your vision
               to life, I'm here to help!
             </p>
+          </div>
+
+          {/** Image Section */}
+          <div className="order-1 sm:order-2 flex justify-center items-center">
+            <img
+              src="src/assets/Work time.gif"
+              alt="Working Illustration"
+              className="rounded-2xl w-[100%] md:w-[100%] object-cover shadow-lg"
+            />
           </div>
         </div>
       </div>
