@@ -1,3 +1,4 @@
+import img1 from "../assets/Worktime.gif";
 const About = () => {
   return (
     <div className="w-full min-h-screen bg-gray-100 text-gray-800">
@@ -35,7 +36,7 @@ const About = () => {
           {/** Image Section */}
           <div className="order-1 sm:order-2 flex justify-center items-center">
             <img
-              src="src\assets\workImg.jpeg"
+              src={img1}
               alt="Working Illustration"
               className="rounded-2xl w-[100%] md:w-[100%] object-cover shadow-lg"
             />
