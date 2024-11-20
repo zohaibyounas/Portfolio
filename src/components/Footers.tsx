@@ -83,7 +83,7 @@ const Footers = () => {
       <section className="w-full bg-black m-auto border-y-2 border-slate-600 grid lg:grid-cols-3 grid-cols-1 justify-between items-center lg:gap-28 gap-8 px-20 py-6">
         <div>
           <h1 className="text-white text-[17px] font-ubuntu text-center">
-            Copyright 2024@, personal-site, All Rights Reserved
+            Copyright &copy; 2024, personal-site, All Rights Reserved
           </h1>
         </div>
         <div>

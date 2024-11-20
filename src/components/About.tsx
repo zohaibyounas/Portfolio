@@ -35,7 +35,7 @@ const About = () => {
           {/** Image Section */}
           <div className="order-1 sm:order-2 flex justify-center items-center">
             <img
-              src="src/assets/Worktime.gif"
+              src="../src/assets/Worktime.gif"
               alt="Working Illustration"
               className="rounded-2xl w-[100%] md:w-[100%] object-cover shadow-lg"
             />
