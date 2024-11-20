@@ -47,7 +47,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full text-gray-200"
-              href="www.linkedin.com/in/zohaib-younas-536755258"
+              href="https://www.linkedin.com/in/zohaib-younas-536755258/"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
@@ -55,7 +55,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
             <a
               className="flex justify-between items-center w-full text-gray-200"
-              href="www.linkedin.com/in/zohaib-younas-536755258"
+              href="https://github.com/zohaibyounas"
             >
               Github <FaGithub size={30} />
             </a>
@@ -71,7 +71,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-200"
-              href="www.linkedin.com/in/zohaib-younas-536755258"
+              href="https://drive.google.com/drive/folders/1U8pTtkvx39ZWfQ77cwl1LFBMsqGzZBp1?dmr=1&ec=wgc-drive-globalnav-goto"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
