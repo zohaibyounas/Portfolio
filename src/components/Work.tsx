@@ -1,4 +1,3 @@
-import React from "react";
 import Project from "../assets/project.png";
 import Proo from "../assets/work.png";
 import project1 from "../assets/project1.png";
