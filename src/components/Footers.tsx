@@ -12,7 +12,7 @@ const Footers = () => {
   return (
     <>
       <section
-        className="w-full bg-black m-auto grid lg:grid-cols-3 grid-col-1
+        className="w-full bg-[#0a192f] m-auto grid lg:grid-cols-3 grid-col-1
       justify-between items-start lg:gap-28 gap-16 lg:p-20 p-10     "
       >
         <div className="flex flex-col justify-center items-start gap-10  ">
@@ -29,26 +29,26 @@ const Footers = () => {
           </h1>
           <div className="flex flex-col justify-center items-start gap-4">
             <p className="flex justify-center items-center gap-3">
-              <FaMapMarkedAlt className="text-limegreen size-8" />
+              <FaMapMarkedAlt className="text-white size-8" />
               <span className="text-[17px] font-ubuntu text-slate-100">
                 First Floor, Zeeshan Arcade, Office No, 2, Street 49, G-13/2
                 Islamabad, 44220{" "}
               </span>
             </p>
             <p className="flex justify-center items-center gap-3">
-              <FaPhoneVolume className="text-limegreen size-8" />
+              <FaPhoneVolume className="text-white size-8" />
               <span className="text-[17px] font-ubuntu text-slate-100">
                 03368865717
               </span>
             </p>
             <p className="flex justify-center items-center gap-3">
-              <IoIosMailOpen className="text-limegreen size-8" />
+              <IoIosMailOpen className="text-white size-8" />
               <span className="text-[17px] font-ubuntu text-slate-100">
                 zohaiby737@gmail.com
               </span>
             </p>
             <p className="flex justify-center items-center gap-3">
-              <IoTime className="text-limegreen size-8" />
+              <IoTime className="text-white size-8" />
               <span className="text-[17px] font-ubuntu text-slate-100">
                 9AM to 6PM
               </span>
