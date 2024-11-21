@@ -10,7 +10,7 @@ const Home = () => {
   };
 
   return (
-    <div className="w-full pt-32 sm:pt-52 bg-gray-100">
+    <div className="w-full pt-32 sm:pt-52 bg-gray-100" id="home">
       {/** Container */}
       <div className="max-w-[1200px] mx-auto px-6 sm:px-12 lg:px-16 flex flex-col justify-center h-full">
         <div className="flex flex-col-reverse sm:flex-row items-center sm:justify-between">

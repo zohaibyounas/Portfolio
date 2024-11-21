@@ -2,7 +2,10 @@ import img1 from "../assets/Worktime.gif";
 const About = () => {
   return (
     <div className="w-full min-h-screen bg-gray-100 text-gray-800">
-      <div className="flex flex-col justify-center items-center w-full h-full py-16">
+      <div
+        className="flex flex-col justify-center items-center w-full h-full py-16"
+        id="about"
+      >
         {/** Header Section */}
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8 mb-8">
           <div className="sm:text-right pb-4 pl-4">
