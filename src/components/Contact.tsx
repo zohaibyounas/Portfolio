@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full sm:mt-64 min-h-screen bg-gray-200 flex flex-col sm:flex-row lg:flex-row justify-center items-center py-10 gap-6 sm:gap-12 lg:gap-16"
+      className="w-full sm:mt-96 min-h-screen bg-gray-200 flex flex-col sm:flex-row lg:flex-row justify-center items-center py-10 gap-6 sm:gap-12 lg:gap-16"
     >
       <div className="w-full sm:w-1/2 lg:w-2/5 flex justify-center">
         <img
