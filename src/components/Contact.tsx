@@ -88,7 +88,7 @@ const Contact = () => {
           data-aos="fade-left"
         >
           <h1 className="text-white text-3xl sm:text-4xl lg:text-5xl font-semibold text-center">
-            Let's Contact Us
+            Get in Touch
           </h1>
           <form
             onSubmit={handleSubmit}
