@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import HTML from "../assets/html.png";
 import CSS from "../assets/css.png";
 import JavaScript from "../assets/javascript.png";
@@ -12,79 +16,64 @@ import next from "../assets/next.png";
 import supabase from "../assets/supabase.png";
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false, // animate every time on scroll
+    });
+    AOS.refresh(); // recalculate on load
+  }, []);
+
+  const skills = [
+    { src: HTML, name: "HTML" },
+    { src: CSS, name: "CSS" },
+    { src: JavaScript, name: "JavaScript" },
+    { src: Tailwind, name: "Tailwind CSS" },
+    { src: ReactImg, name: "React" },
+    { src: GitHub, name: "GitHub" },
+    { src: BootStrap, name: "Bootstrap" },
+    { src: Mongo, name: "MongoDB" },
+    { src: node, name: "Node.js" },
+    { src: express, name: "Express" },
+    { src: next, name: "Next.js" },
+    { src: supabase, name: "Supabase" },
+  ];
+
   return (
-    <div className="w-full min-h-screen bg-[#0a192f] text-gray-300" id="skills">
-      {/**container */}
+    <div className="w-full min-h-screen bg-black text-white" id="skills">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div>
+        {/* Header */}
+        <div className="mb-8" data-aos="fade-right">
           <p className="text-4xl font-bold inline border-b-4 border-pink-600">
             Skills
           </p>
-          <p className="py-4 text-xl">
-            These are the technologies I've worked with.
+          <p className="py-4 text-xl text-gray-300">
+            A collection of technologies and tools I work with.
           </p>
         </div>
+
+        {/* Skills Grid */}
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center py-8">
-          <div className="shadow-md shadow-white hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={HTML} alt="Html-icon" />
-            <p className="my-4">HTML</p>
-          </div>
-          <div className="shadow-md shadow-white hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={CSS} alt="CSS-icon" />
-            <p className="my-4">CSS</p>
-          </div>
-          <div className="shadow-md shadow-white hover:scale-110 duration-500">
-            <img
-              className="w-20 mx-auto"
-              src={JavaScript}
-              alt="JavaScript-icon"
-            />
-            <p className="my-4">JavaScript</p>
-          </div>
-          <div className="shadow-md shadow-white hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={Tailwind} alt="Tailwind-icon" />
-            <p className="my-4">Tailwind</p>
-          </div>
-          <div className="shadow-md shadow-white hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={ReactImg} alt="React-icon" />
-            <p className="my-4">React</p>
-          </div>
-          <div className="shadow-md shadow-white hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={GitHub} alt="GitHub-icon" />
-            <p className="my-4">GitHub</p>
-          </div>
-          <div className="shadow-md shadow-white hover:scale-110 duration-500">
-            <img
-              className="w-20 mx-auto"
-              src={BootStrap}
-              alt="BootStrap-icon"
-            />
-            <p className="my-4">BootStrap</p>
-          </div>
-          <div className="shadow-md shadow-white hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={Mongo} alt="Mongo-icon" />
-            <p className="my-4">MongoDB</p>
-          </div>
-          <div className="shadow-md shadow-white hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={node} alt="Node-icon" />
-            <p className="my-4">Node.js</p>
-          </div>
-          <div className="shadow-md shadow-white hover:scale-110 duration-500">
-            <img
-              className="w-20 mx-auto mt-6"
-              src={express}
-              alt="Express-icon"
-            />
-            <p className="my-4">Express</p>
-          </div>
-          <div className="shadow-md shadow-white hover:scale-110 duration-500">
-            <img className="w-20 mx-auto mt-4" src={next} alt="Next-icon" />
-            <p className="my-4">Next.js</p>
-          </div>
-          <div className="shadow-md shadow-white hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={supabase} alt="Supabase-icon" />
-            <p className="my-4">Supabase</p>
-          </div>
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="relative group bg-gradient-to-b from-gray-900 to-black p-6 rounded-xl border border-gray-700 hover:border-pink-500 transition-all duration-500"
+              data-aos="zoom-in"
+              data-aos-delay={index * 100} // delay animation based on index
+            >
+              {/* Glow effect */}
+              <div className="absolute inset-0 bg-pink-500 opacity-0 group-hover:opacity-20 blur-2xl transition-all duration-500"></div>
+
+              <img
+                className="w-20 mx-auto transition-transform duration-500 group-hover:scale-110"
+                src={skill.src}
+                alt={`${skill.name}-icon`}
+              />
+              <p className="mt-4 text-gray-300 group-hover:text-white transition-colors duration-300">
+                {skill.name}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
