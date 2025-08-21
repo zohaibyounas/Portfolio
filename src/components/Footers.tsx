@@ -4,6 +4,7 @@ import {
   FaInstagram,
   FaYoutube,
   FaTwitter,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { IoIosMailOpen } from "react-icons/io";
@@ -89,7 +90,7 @@ const Footers = () => {
         {/* Left */}
         <div className="text-center lg:text-left">
           <h1 className="text-white text-[15px] font-ubuntu">
-            Copyright &copy; 2024, personal-site, All Rights Reserved
+            Copyright &copy; 2025, personal-site, All Rights Reserved
           </h1>
         </div>
 
@@ -103,16 +104,32 @@ const Footers = () => {
 
         {/* Right (Social Links) */}
         <div className="flex lg:justify-end justify-center items-center gap-4">
+          {/* Facebook */}
           <a
-            href="https://cdn.dribbble.com/users/11475909/screenshots/20343551/media/1169e0e11347c3fa05981a450bb1ccdf.png?resize=400x300&vertical=center"
+            href="https://www.facebook.com/profile.php?id=100048721413491"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaFacebook className="text-blue-600 size-6 hover:scale-110 transition-transform duration-300" />
           </a>
-          <FaInstagram className="text-red-300 size-6 hover:scale-110 transition-transform duration-300" />
-          <FaYoutube className="text-red-600 size-6 hover:scale-110 transition-transform duration-300" />
-          <FaTwitter className="text-blue-400 size-6 hover:scale-110 transition-transform duration-300" />
+
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/call_me_zabii6/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className="text-pink-500 size-6 hover:scale-110 transition-transform duration-300" />
+          </a>
+
+          {/* WhatsApp */}
+          <a
+            href="https://wa.me/923368865717"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp className="text-green-500 size-6 hover:scale-110 transition-transform duration-300" />
+          </a>
         </div>
       </section>
     </>

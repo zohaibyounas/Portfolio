@@ -12,9 +12,30 @@ import project4 from "../assets/project4.png";
 import project5 from "../assets/project5.png";
 import project6 from "../assets/project6.png";
 import project7 from "../assets/project7.png";
+import project0 from "../assets/project0.png";
+import project8 from "../assets/project8.png";
+import project9 from "../assets/project9.png";
 
 // Project Data
 const projects = [
+  {
+    img: project0,
+    title: "Full Stack Application",
+    demo: "https://www.e-passtransfer.de/",
+    code: "https://github.com/zohaibyounas/E-PASS-TRANSFER",
+  },
+  {
+    img: project8,
+    title: "React JS Application",
+    demo: "https://mira-ee.de/",
+    code: "https://github.com/zohaibyounas/UpadatedCode-Mira",
+  },
+  {
+    img: project9,
+    title: "POS Application",
+    demo: "https://pos-office-frontend.vercel.app/",
+    code: "https://github.com/zohaibyounas/pos-office-frontend",
+  },
   {
     img: project1,
     title: "Next JS Application",
