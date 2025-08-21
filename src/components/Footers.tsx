@@ -2,8 +2,6 @@ import {
   FaMapMarkedAlt,
   FaFacebook,
   FaInstagram,
-  FaYoutube,
-  FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
