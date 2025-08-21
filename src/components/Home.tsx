@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Pic from "../assets/pic.jpeg";
+import Pic from "../assets/younas.png";
 import { HiArrowCircleRight } from "react-icons/hi";
 
 const Home = () => {
